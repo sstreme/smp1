@@ -2,6 +2,16 @@
 @import '@angular/material/prebuilt-themes/deeppurple-amber.css';
 @import '~bootstrap/dist/css/bootstrap.min.css';
 
+button:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+*:focus{
+    outline: none;
+    box-shadow: none;
+}
+
 .bg{
     display: flex;
     position: relative;
