@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+.bg{
+    display: flex;
+    position: relative;
+    margin-left: 5%;
+
+}
+.desc{
+    max-width: 500px;
+    padding-right: 50px;
+    padding-top: 50px;
+}
+.rel{
+    max-width: 300px;
+    padding-top: 50px;
+}
+.prod{
+    padding-top: 70px;
+}

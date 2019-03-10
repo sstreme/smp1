@@ -1,0 +1,11 @@
+.menu_bar{
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+.menu_list{
+    display:flex;
+}
+.logo{
+    display: flex;
+}

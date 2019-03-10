@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { MatMenuTrigger} from '@angular/material';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'p1';
+  @ViewChild(MatMenuTrigger) trigger: MatMenuTrigger;
+  onHover():void{
+    this.trigger.openMenu();
+  }
+  onOut():void{
+    this.trigger.closeMenu();
+  }
 }

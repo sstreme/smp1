@@ -1,0 +1,33 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid menu_bar">
+    <div class="menu_list">
+      <button #trigger="matMenuTrigger" mat-button [matMenuTriggerFor]="terapeutica">Terapéutica
+        dermatológica</button>
+      <mat-menu #terapeutica="matMenu">
+        <button mat-menu-item [matMenuTriggerFor]="preventiva">Preventiva</button>
+        <button mat-menu-item>Correctiva</button>
+      </mat-menu>
+
+      <mat-menu #preventiva="matMenu">
+        <button mat-menu-item [matMenuTriggerFor]="vivier">VivierSkin</button>
+      </mat-menu>
+
+      <mat-menu #vivier="matMenu">
+        <button mat-menu-item routerLink="/vivier/foaming">Limpiadores y Tonificantes</button>
+      </mat-menu>
+
+      <button mat-button [matMenuTriggerFor]="tecnologias">Tecnologías</button>
+      <mat-menu #tecnologias="matMenu">
+        <button mat-menu-item>Estética</button>
+      </mat-menu>
+
+
+      <button mat-button>Especialidad</button>
+      <button mat-button>Quienes Somos</button>
+      <button mat-button>Contacto</button>
+    </div>
+    <div class="logo">
+      <img src="../assets/index/logo.svg" width="248.692px" height="56.626px">
+    </div>
+  </div>
+</nav>
